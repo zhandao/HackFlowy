@@ -15,7 +15,8 @@
     "pg": "~3.4.1",
     "sequelize": "~3.17.3",
     "sequelize-cli": "^2.3.1",
-    "socket.io": "~1.4.4"
+    "socket.io": "~1.4.4",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "sqlite3": "~3.1.1"
@@ -29,10 +30,13 @@
     "db:migrate": "./node_modules/.bin/sequelize -m --config config/database.json",
     "db:seed": "node db/seed/initial_tasks.js",
     "bower:i": "node node_modules/bower/bin/bower install",
-    "postinstall": "npm run db:migrate && npm run db:seed && npm run bower:i"
+    "postinstall": "npm run db:migrate && npm run db:seed && npm run bower:i",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/abhshkdz/HackFlowy.git"
-  }
+  },
+  "snyk": true
 }
