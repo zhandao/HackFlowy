@@ -10,12 +10,12 @@
     "errorhandler": "^1.4.3",
     "express": "^4",
     "lodash": "^4.0.1",
-    "method-override": "^2.3.5",
+    "method-override": "^3.0.0",
     "path": "~0.12.7",
     "pg": "~3.4.1",
     "sequelize": "~3.17.3",
     "sequelize-cli": "^2.3.1",
-    "socket.io": "~1.4.4"
+    "socket.io": "~2.1.0"
   },
   "devDependencies": {
     "sqlite3": "~3.1.1"
